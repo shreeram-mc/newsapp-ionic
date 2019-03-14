@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button (click)="goBack()">
+       &lt;&lt;  Back
+    </ion-button>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-card>
+    <ion-card-title>{{article.title}}</ion-card-title>
+    <ion-img [src]="article.urlToImage" *ngIf="article.urlToImage"></ion-img>
+    <p *ngIf="article.content; else description">
+        {{article.content}}
+    </p>
+    
+    <ng-template #description>
+       <p> {{article.description}} </p>
+    </ng-template>
+
+</ion-card>
+
+   
+</ion-content>

@@ -37,6 +37,11 @@ const routes: Routes = [
     path: '',
     redirectTo: '/tabs/(tab1:tab1)',
     pathMatch: 'full'
+  },
+  { 
+    path: '/news-single',
+    redirectTo: './news-single/news-single',
+    pathMatch: 'full'
   }
 ];
 

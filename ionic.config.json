@@ -1,5 +1,7 @@
 {
   "name": "ionic-ngs",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
